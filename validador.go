@@ -13,6 +13,8 @@ import (
 )
 
 func main() {
+	log.SetFlags(0)
+
 	challengesDir := "./desafios"
 	challenges, err := os.ReadDir(challengesDir)
 	if err != nil {
@@ -46,6 +48,7 @@ func main() {
 				os.Exit(1)
 			}
 		}
+		fmt.Println()
 	}
 }
 
